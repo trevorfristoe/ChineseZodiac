@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Chinese Zodiac!</title>
+<style>
+
+ body {
+  background-color: moccasin;}
+
+#Title {
+background-color: aliceblue;
+font-weight: bold;
+border-style: ridge;
+border-color: lightblue;
+font-family: cursive;
+font-size: 35px; }
+
+#input {
+font-family: cursive;
+background-color: white;
+border-style: ridge;
+border-color: black;
+font-size: 30px; }
+
+#button {
+font-family: cursive;
+font-size: 30px;
+font-weight: bold;
+background-color: aliceblue; }
+</style>
+<script>
+
+    function ZodiacMath()
+    {
+    var yearborn = document.getElementById('input').value;
+    yearborn = parseInt(yearborn);
+
+    if(yearborn % 12 == 4)
+    {
+    var rat = "<img src = 'rat.jpg' height = '100px' width = '100px'>";
+    document.getElementById("sign").innerHTML = rat;
+    }
+
+    if(yearborn % 12 == 5)
+    {
+    var ox = "<img src = 'ox.jpg' height = '100px' width = '100px'>";
+    document.getElementById("sign").innerHTML = ox;
+    }
+
+    if(yearborn % 12 == 6)
+    {
+    var tiger = "<img src = 'tiger.png' height = '100px' width = '100px'>";
+    document.getElementById("sign").innerHTML = tiger;
+    }
+
+    if(yearborn % 12 == 7)
+    {
+    var rabbit = "<img src = 'rabbit.jpg' height = '100px' width = '100px'>";
+    document.getElementById("sign").innerHTML = rabbit;
+    }
+
+    if(yearborn % 12 == 8)
+    {
+    var dragon = "<img src = 'dragon.png' height = '100px' width = '100px'>";
+    document.getElementById("sign").innerHTML = dragon;
+    }
+
+    if(yearborn % 12 == 9)
+    {
+    var snake = "<img src = 'snake.jpg' height = '100px' width = '100px'>";
+    document.getElementById("sign").innerHTML = snake;
+    }
+
+    if(yearborn % 12 == 10)
+    {
+    var horse = "<img src = 'horse.jpg' height = '100px' width = '100px'>";
+    document.getElementById("sign").innerHTML = horse;
+    }
+
+    if(yearborn % 12 == 0)
+    {
+    var monkey = "<img src = 'monkey.jpg' height = '100px' width = '100px'>";
+    document.getElementById("sign").innerHTML = monkey;
+    }
+
+    if(yearborn % 12 == 1)
+    {
+    var rooster = "<img src = 'rooster.jpg' height = '100px' width = '100px'>";
+    document.getElementById("sign").innerHTML = rooster;
+    }
+
+    if(yearborn % 12 == 2)
+    {
+    var dog = "<img src = 'dog.jpg' height = '100px' width = '100px'>";
+    document.getElementById("sign").innerHTML = dog;
+    }
+
+    if(yearborn % 12 == 3)
+    {
+    var pig = "<img src = 'pig.jpg' height = '100px' width = '100px'>";
+    document.getElementById("sign").innerHTML = pig;
+    }
+
+    if(yearborn % 12 == 11)
+    {
+    var sheep = "<img src = 'sheep.jpg' height = '100px' width = '100px'>";
+    document.getElementById("sign").innerHTML = sheep;
+    }
+  }
+
+</script>
+</head>
+<body>
+
+  <center><p id="Title">Chinese Zodiac Generator!</p></center>
+  <br>
+
+  <center><input type = "text" value = "What Year You Were Born?" id = "input"></center>
+  <br><br><br>
+  <center><input id = "Button" type = "button" value = "Click Me!" onclick = "ZodiacMath()"></center>
+  <br><br><br>
+  <center><span id = "sign"></span></center>
+
+</body>
+</html>
